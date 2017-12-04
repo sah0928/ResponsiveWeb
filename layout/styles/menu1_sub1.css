@@ -12,6 +12,24 @@
 .sub-wrap .sub-content { float:right; width:760px; }
 .sub-wrap .sub-content .table-title { line-height:80px;font-size:28px;height:70px;color:#000;font-weight:500;font-family:Yu Gothic, Malgun Gothic;}
 
+.row2 {
+    text-align: right;
+}
+
+
+/*all*/
+h1{
+  font-size: 28px;
+  font-weight: bold;
+  color:#A1C6D9;
+}
+h2{
+  font-size: 24px;
+}
+.sdb_holder li {
+  font-size: 16px;
+}
+
 /*sub2*/
 .history {
   padding: 10px;
@@ -27,27 +45,6 @@
   font-weight: bold;
 }
 
-
-/*sub3*/
-h3 {
-  color: #4F81BD;
-  font-size: 22px;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "함초롬바탕", serif;
-}
-td {
-  vertical-align:top;
-}
-.person_img {
-  width: 130px;
-  height: 160px;
-}
 
 /*sub5*/
 #map {
