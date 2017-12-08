@@ -51,7 +51,7 @@ body {
 }
 
 .form--no {
-  -webkit-animation: NO 1s ease-in-out;
+ -webkit-animation: NO 1s ease-in-out;
           animation: NO 1s ease-in-out;
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
@@ -67,7 +67,7 @@ body {
   border: 0;
   outline: 0;
   -webkit-transition: 0.3s;
-  transition: 0.3s;
+  transition: 0.3s;*
 }
 .form__input:focus {
   background: #f7f7f7;
