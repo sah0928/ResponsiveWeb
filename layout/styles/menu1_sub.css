@@ -16,7 +16,6 @@
     text-align: right;
 }
 
-
 /*all*/
 h1{
   font-size: 28px;
@@ -29,22 +28,6 @@ h2{
 .sdb_holder li {
   font-size: 16px;
 }
-
-/*sub2*/
-.history {
-  padding: 10px;
-  font-size: 14px;
-  font-family: "함초롬바탕", serif;
-}
-.date {
-  padding-top: 5px;
-  height: 120px;
-  width: 120px;
-}
-#dates {
-  font-weight: bold;
-}
-
 
 /*sub5*/
 #map {
