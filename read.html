@@ -13,6 +13,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css">
 <link href="layout/styles/menu1_sub.css" rel="stylesheet" type="text/css">
+<link href="layout/styles/readstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -87,7 +88,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="menu5_sub1.html">커뮤니티</a></li>
-      <li><a href="menu5_sub2.html">공지사항</a></li>
+      <li><a href="menu5_sub2.html">자유게시판</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </div>
@@ -113,60 +114,28 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="content three_quarter">
       <!-- ################################################################################################ -->
-      <h1>공지사항</h1>
-      <table class="table table-hover">
-        <thead>
-        <tr>
-          <th>번호</th>
-          <th>제목</th>
-          <th>작성자</th>
-          <th>날짜</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>121</td>
-          <td><a href="read.html">공지입니다</a></td>
-          <td>설아현</td>
-          <td>2017-12-15</td>
-        </tr>
-        <tr>
-          <td>120</td>
-          <td><a href="read.html">공지입니다</a></td>
-          <td>문예지</td>
-          <td>2017-12-15</td>
-        </tr>
-        <tr>
-          <td>119</td>
-          <td><a href="read.html">공지입니다</a></td>
-          <td>김영남</td>
-          <td>2017-12-14</td>
-        </tr>
-        <tr>
-          <td>118</td>
-          <td><a href="read.html">공지입니다</a></td>
-          <td>김영남</td>
-          <td>2017-12-14</td>
-        </tr>
-        <tr>
-          <td>117</td>
-          <td><a href="read.html">공지입니다</a></td>
-          <td>김영남</td>
-          <td>2017-12-14</td>
-        </tr>
-        </tbody>
-      </table>
-      <hr/>
-      <a href="write.html" class="btn btn-default pull-right">글쓰기</a>
-      <div class="text-center">
-        <ul class="pagination">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
+      <h1>게시글 제목</h1>
+      <div id="comments">
+        <ul>
+          <li class="read w10 fl">제목</li>
+          <li class="read_con">제목</li>
+          <li class="read w5 fl">작성자</li>
+          <li class="read_con">김영남</li>
         </ul>
+        <ul>
+          <li class="raad_nl fl">내용</li>
+          <li class="read_nl_con">블라블라블라블라브랍릅ㄹ라브라븗</li>
+        </ul>
+
+        <div class="bo_ser">
+          <ul>
+            <li><a href="menu5_sub2.html">[목록으로]</a></li>  <!--게시판 마다 다른 링크-->
+            <li><a href="#">[수정]</a></li>
+            <li><a href="#">[삭제]</a></li>
+          </ul>
+        </div>
       </div>
+
       <!-- ################################################################################################ -->
     </div>
     <!-- ################################################################################################ -->
@@ -197,16 +166,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
   </footer>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!--wrapper  지움-->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
 <script src="layout/scripts/jquery.min.js"></script>
