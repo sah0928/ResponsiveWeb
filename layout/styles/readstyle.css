@@ -15,7 +15,7 @@ ul li {list-style:none; }
 .read_c {background-color:#bfbfbf; }
 
 .read_con {width:90%; height:40px; float:left; font:normal 13px "Dotum"; line-height:20px; color:#333333; border-bottom:solid 1px black;  }
-.read_nl {width:10%; background:#bfbfbf; height:130px; font:bold 13px "Malgun Gothic"; line-height:130px; color:black; text-align:center; }
+.read_nl {width:10%; background:#bfbfbf; height:130px; font:bold 13px "Malgun Gothic"; line-height:100px; color:black; text-align:center; }
 .read_nl_con {width:90%; height:129px; float:left; font:normal 13px "Dotum"; line-height:20px;  }
 .bo_ser {font:14px 'dotum'; color:white;}
 .bo_ser > ul > li {float:left; margin-left:10px; }
