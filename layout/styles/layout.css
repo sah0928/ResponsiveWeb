@@ -106,19 +106,7 @@ File: Layout CSS
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
-#footer{padding:0;}
-
-#footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem;}
-
-#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
-#footer .linklist li:last-child{margin:0; padding:0; border:none;}
-#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
-#footer .linklist li, #footer .linklist li::after{clear:both;}
-
-#footer .contact{}
-#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
-#footer .contact li *{margin:0; padding:0; line-height:1.6;}
-#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+#footer{padding-left: 50px;}
 
 #footer .elementDiv{width: 100px; padding:5px; margin:10px; float:right; background:gray; text-align:center; font-weight: bold;}
 
@@ -312,6 +300,7 @@ tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{
 tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
 table a, #comments a{background-color:inherit;}
 
+.scrollable{margin:0 15px 30px 0;}
 
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -346,7 +335,7 @@ table a, #comments a{background-color:inherit;}
 
 	#mainav{}
 	#mainav ul{display:none;}
-	#mainav form{display:block;}
+	#mainav form{display:block; margin-top:40px;}
 
 	#breadcrumb{}
 
@@ -359,11 +348,12 @@ table a, #comments a{background-color:inherit;}
 	#copyright{}
 	#copyright p:first-of-type{margin-bottom:10px;}
 
-	#footer .elementDiv{margin:20px 0 0 10px; float:right;}
+	#footer .elementDiv{margin:0 0 5px 10px;}
 }
 
-@media screen and (max-width:847px){
-	#footer .elementDiv{margin:0 0 5px 10px;}
+@media screen and (max-width:767px){
+	#footer{padding-bottom:20px;}/* not necessary but looks better */
+	#footer .elementDiv{margin:10px 10px 0 0; float:left;}
 }
 
 @media screen and (max-width:750px){
@@ -374,22 +364,24 @@ table a, #comments a{background-color:inherit;}
 
 	#topbar{text-align:center;}
 	#topbar *{margin:0;}
-	#topbar ul{margin:0 0 10px 0; line-height:normal;}
+	#topbar ul{margin:0; line-height:normal;}
 	#topbar ul li{display:inline-block; margin-right:20px;}
 	#topbar ul li:last-child{margin-right:0;}
+
+	#mainav form{margin-top:10px;}
 
 	#pageintro{padding:150px 0;}
 	#pageintro article{max-width:none;}
 
 	.clrbox, .clrbox li{display:block; width:100%;}
-
-	#footer{padding-bottom:20px;}/* not necessary but looks better */
-	#footer .elementDiv{margin:10px 10px 0 0; float:left;}
 }
 
 
 @media screen and (max-width:580px){
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 30px 30px 0; padding:0;}
+
+	.scrollable{display:block; width:100%; margin:0 0 40px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
 
 	#latest ul li .txtoverlay .txtcaption{display:none;}
 }
@@ -398,9 +390,6 @@ table a, #comments a{background-color:inherit;}
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:650px){
-	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
-	.scrollable table{margin:0; padding:0; white-space:nowrap;}
-
 	.inline li{display:block; margin-bottom:10px;}
 	.pushright li{margin-right:0;}
 
