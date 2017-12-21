@@ -113,17 +113,20 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="content three_quarter">
       <!-- ################################################################################################ -->
-      <h1>글쓰기</h1>
+      <h1>글쓰기</h1>            <!--요부분 메뉴에따라 글 바꾸면 됨-->
       <div id="comments">
         <h2 style="font-size:11px;">예쁜 말씀 전해주세요</h2>
-        <form action="#" method="post">
-          <div class="one_third">
+        <form action="#" method="post">       <!--action 설정 바람-->
+          <div class="one_third" style="margin-left:0;">
             <label for="text">제목</label>
             <input type="text" name="text" id="text" value="" size="22">
           </div>
           <div class="block clear">
             <label for="comment">내용</label>
             <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+          </div>
+          <div class="filebox preview-image" style="background-color:white;">
+            <input type="file" id="input-file" class="upload-hidden">
           </div>
           <div>
             <input type="submit" name="submit" value="제출">
