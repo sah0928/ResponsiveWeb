@@ -83,78 +83,29 @@
         <h1 class="user__title">Welcome!</h1>
     </header>
 
-    <form class="form" style="border: 2px solid;" name="form">
-        <div class="form__group">
-            <input type="text" placeholder="이름" class="form__input" name="myname" />
-        </div>
+    <form class="form" style="border: 2px solid;" method ="post" name="form">
         <div class="form__group">
             <input type="text" placeholder="아이디" class="form__input" name="myid" />
         </div>
         <div class="form__group">
             <input type="password" placeholder="비밀번호" class="form__input"  name="mypw"/>
         </div>
-        <div class="form__group">
-            <input type="password" placeholder="비밀번호확인" class="form__input" name="mypw_check" />
-        </div>
-        <div class="form__group">
-            <input type="text" placeholder="전화번호" class="form__input" name="myphone" />
-        </div>
-        <div class="form__group" style="float: left; width: 33%;">
-            <input type="text" placeholder="년" class="form__input" name="year" />
-        </div>
-        <div class="form__group" style="float: left; width: 33%;">
-            <input type="text" placeholder="월" class="form__input" name="month" />
-        </div>
-        <div class="form__group" style="float: left; width: 33%;">
-            <input type="text" placeholder="일" class="form__input" name="day" />
-        </div>
+        <input class ="btn" type="button" value="로그인" onclick="button_event();"/>
 
-        <input class ="btn" type="button" value="회원가입" onclick="button_event();"/>
         <script type="text/javascript">
           function button_event(){
-            if (form.myname.value =="") {
-              alert("이름를 입력하세요.");
-              form.myname.focus();
-              return false;
-            }else if (form.myid.value =="") {
-              alert("아이디를 입력하세요.");
-              form.myid.focus();
+            if (form.myid.value == "") {
+              alert("아이디를 입력하지 않았습니다.")
+              form.myid.focus()
               return false;
             }else if(form.mypw.value==""){
-              alert("비밀번호를 입력하세요.");
+              alert("비밀번호를 입력하지 않았습니다.")
               form.mypw.focus();
               return false;
-            }else if(form.mypw_check.value==""){
-              alert("비밀번호 확인란을 입력해주세요.");
-              sign_up_form.pw_check.focus();
-              return false;
-            }else if(form.myphone.value==""){
-              alert("전화번호를 입력하세요.");
-              sign_up_form.fst_ph.focus();
-              return false;
-            }else if(form.mypw.value != form.mypw_check.value) {
-              alert("비밀번호가 일치하지 않습니다")
-              document.form.mypw.value = "";
-              document.form.mypw.focus();
-              return false;
-            }else if (form.mypw.value.length<4 ||form.mypw.value.length>12) {
-              alert("비밀번호를 4~12자까지 입력해주세요.")
-              form.mypw.focus()
-              form.mypw_check.select()
-              return false;
-            }else if(form.myid.value.length<4 || form.myid.value.length>12) {
-              alert("아이디를 4~12자까지 입력해주세요.");
-              form.myid.focus();
-              form.myid.select();
-              return false;
-            }else if(form.year.value=="" || form.month.value=="" || form.day.value=="") {
-              alert("생년월일을 입력해주세요.");
-              form.year.focus();
-              form.year.select();
-              return false;
-            }else{
-              alert("회원가입이 되었습니다. 승인을 기다려주세요.");
             }
+              alert("로그인 되었습니다")
+              form.submit();
+
           }
         </script>
     </form>
