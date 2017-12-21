@@ -263,7 +263,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#A1C6D9;}
 
 .txtoverlay .txtcaption{color:#FFFFFF; background-color:rgba(0,0,0,.5);}
 
-.titlebox{background-color:#A1C6D9; width:8px; height:25px; margin:2px 10px 2px 0;}
+.titlebox{background-color:#A1C6D9; width:8px; height:25px; margin:2px 10px 2px 0; float:left;}
 .subbox{background-color:#A1C6D9; width:12px; height:4px; margin:2px 10px 2px 0;}
 
 /* Rows */
