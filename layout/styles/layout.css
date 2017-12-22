@@ -12,6 +12,11 @@ File: Layout CSS
 @import url("framework.css");
 
 
+a:hover{
+	text-decoration:none;
+}
+
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0{border-bottom:1px solid;}
@@ -235,6 +240,10 @@ td{border-width:0 1px;}
 .carousel-inner > .item {
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
